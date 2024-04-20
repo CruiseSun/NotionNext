@@ -17,6 +17,7 @@ import { useGlobal } from '@/lib/global'
 import { useEffect, useMemo, useState } from 'react'
 import { isBrowser } from '@/lib/utils'
 import { debounce } from 'lodash'
+import InfoCard from './InfoCard'
 
 /**
  * 侧边栏
@@ -140,6 +141,11 @@ function AsideLeft(props) {
                 <div className='w-12 my-3' />
                 <GroupCategory categories={categoryOptions} currentCategory={currentCategory} />
             </section>}
+
+            <section className='flex flex-col text-gray-600'>
+                <div className='w-12 my-2' />
+                <InfoCard {...props} />
+            </section>
 
             <section className='flex flex-col'>
                 <div className='w-12 my-3' />

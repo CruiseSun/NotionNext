@@ -56,9 +56,9 @@ function AsideLeft(props) {
       }
     } else {
       if (isReverse) {
-        return 'right-70'
+        return 'right-76'
       } else {
-        return 'left-70'
+        return 'left-76'
       }
     }
   }, [isCollapsed])

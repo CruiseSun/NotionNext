@@ -6,7 +6,7 @@ function GroupCategory ({ currentCategory, categories }) {
   }
 
   return <>
-    <div id='category-list' className='dark:border-gray-600 flex flex-wrap'>
+    <div id='category-list' className='dark:border-black border-2 flex flex-wrap'>
       {categories.map(category => {
         const selected = currentCategory === category.name
         return (

@@ -97,7 +97,7 @@ function AsideLeft(props) {
  
   return <div className={`sideLeft relative ${isCollapsed ? 'w-0' : 'w-80'} duration-300 transition-all bg-white dark:bg-hexo-black-gray min-h-screen hidden lg:block z-20`}>
         {/* 折叠按钮 */}
-    {siteConfig('FUKASAWA_SIDEBAR_COLLAPSE_BUTTON', null, CONFIG) && <div className={`${position} hidden lg:block fixed top-0 cursor-pointer hover:scale-110 duration-300 px-3 py-2 dark:text-white`} onClick={toggleOpen}>
+    {siteConfig('FUKASAWA_SIDEBAR_COLLAPSE_BUTTON', null, CONFIG) && <div className={`${position} hidden lg:block fixed top-0 cursor-pointer hover:scale-110 duration-300 px-0 py-2 dark:text-white`} onClick={toggleOpen}>
             {isCollapsed ? <i className="fa-solid fa-indent text-xl"></i> : <i className='fas fa-bars text-xl'></i>}
         </div>}
 

@@ -5,9 +5,9 @@ import { siteConfig } from '@/lib/config'
 const InfoCard = (props) => {
   const { siteInfo } = props
   return <div id='info-card' className='py-0'>
-    <div className='text-lg justify-left dark:text-gray-300'><b>博主：</b></div>
+    <div className='text-lg flex justify-center justify-left text-red-600 dark:text-gray-300'><b>About</b></div>
     <div className='items-center justify-center'>
-        <div className='hover:scale-105 transform duration-200 cursor-pointer flex justify-center' onClick={ () => { Router.push('/about') }}>
+        <div className='hover:scale-105 transform duration-200 cursor-pointer flex justify-center pt-2' onClick={ () => { Router.push('/about') }}>
             <LazyImage src={siteInfo?.icon} className='rounded-full' width={100} alt={siteConfig('AUTHOR')}/>
          </div>
         <div className='flex-col flex justify-center'>

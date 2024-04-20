@@ -5,7 +5,7 @@ import { siteConfig } from '@/lib/config'
 const InfoCard = (props) => {
   const { siteInfo } = props
   return <div id='info-card' className='py-0'>
-    关于博主： <br />
+    <div className='text-lg py-2 hover:scale-105 transform duration-200 flex justify-left dark:text-gray-300'>博主：</div>
     <div className='items-center justify-center'>
         <div className='hover:scale-105 transform duration-200 cursor-pointer flex justify-center' onClick={ () => { Router.push('/about') }}>
             <LazyImage src={siteInfo?.icon} className='rounded-full' width={100} alt={siteConfig('AUTHOR')}/>

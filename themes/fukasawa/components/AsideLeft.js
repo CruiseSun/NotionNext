@@ -120,7 +120,7 @@ function AsideLeft(props) {
             </section>
 
             <section className='flex flex-col dark:text-gray-300'>
-                <div className='w-12 my-2' />
+                <div className='w-12 my-0' />
                 <Announcement post={notice} />
             </section>
 
@@ -132,18 +132,18 @@ function AsideLeft(props) {
                 <AdSlot type='in-article' />
             </section>
 
-            {router.asPath !== '/tag' && <section className='flex flex-col'>
-                <div className='w-12 my-2' />
-                <GroupTag tags={tagOptions} currentTag={currentTag} />
-            </section>}
-
             {router.asPath !== '/category' && <section className='flex flex-col'>
                 <div className='w-12 my-3' />
                 <GroupCategory categories={categoryOptions} currentCategory={currentCategory} />
             </section>}
 
-            <section className='flex flex-col text-gray-600'>
+            {router.asPath !== '/tag' && <section className='flex flex-col'>
                 <div className='w-12 my-2' />
+                <GroupTag tags={tagOptions} currentTag={currentTag} />
+            </section>}
+
+            <section className='flex flex-col text-gray-600'>
+                <div className='w-12 my-4' />
                 <InfoCard {...props} />
             </section>
 

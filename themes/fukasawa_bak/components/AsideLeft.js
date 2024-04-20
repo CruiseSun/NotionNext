@@ -104,22 +104,22 @@ function AsideLeft(props) {
 
             <Logo {...props} />
 
-            <section className='siteInfo flex flex-col dark:text-gray-300 pt-4'>
+            <section className='siteInfo flex flex-col dark:text-gray-300 pt-8'>
                 {siteConfig('DESCRIPTION')}
             </section>
 
             <section className='flex flex-col text-gray-600'>
-                <div className='w-12 my-2' />
+                <div className='w-12 my-4' />
                 <MenuList {...props} />
             </section>
 
             <section className='flex flex-col text-gray-600'>
-                <div className='w-12 my-2' />
+                <div className='w-12 my-4' />
                 <SearchInput {...props} />
             </section>
 
             <section className='flex flex-col dark:text-gray-300'>
-                <div className='w-12 my-2' />
+                <div className='w-12 my-4' />
                 <Announcement post={notice} />
             </section>
 
@@ -132,17 +132,17 @@ function AsideLeft(props) {
             </section>
 
             {router.asPath !== '/tag' && <section className='flex flex-col'>
-                <div className='w-12 my-2' />
+                <div className='w-12 my-4' />
                 <GroupTag tags={tagOptions} currentTag={currentTag} />
             </section>}
 
             {router.asPath !== '/category' && <section className='flex flex-col'>
-                <div className='w-12 my-3' />
+                <div className='w-12 my-4' />
                 <GroupCategory categories={categoryOptions} currentCategory={currentCategory} />
             </section>}
 
             <section className='flex flex-col'>
-                <div className='w-12 my-3' />
+                <div className='w-12 my-4' />
                 <SocialButton />
                 <SiteInfo />
             </section>

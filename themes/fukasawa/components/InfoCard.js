@@ -11,8 +11,8 @@ const InfoCard = (props) => {
             <LazyImage src={siteInfo?.icon} className='rounded-full' width={100} alt={siteConfig('AUTHOR')}/>
          </div>
         <div className='flex-col flex justify-center'>
-            <div className='text-base py-2 duration-200 flex justify-center dark:text-gray-300 font-sans'>{siteConfig('AUTHOR')}</div>
-            <div className='font-light text-gray-600 mb-1 duration-200 flex justify-center dark:text-gray-400'>{siteConfig('BIO')}</div>
+            <div className='text-lg py-2 duration-200 flex justify-center dark:text-gray-300 font-sans'>{siteConfig('AUTHOR')}</div>
+            <div className='font-light text-gray-600 mb-1 duration-200 flex justify-center dark:text-gray-400 font-sans'>{siteConfig('BIO')}</div>
         </div>
     </div>
   </div>

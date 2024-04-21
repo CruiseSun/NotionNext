@@ -14,9 +14,7 @@ const InfoCard = (props) => {
         <div className='flex-col flex justify-center'>
             <div className='text-lg py-2 duration-200 flex justify-center dark:text-gray-300 font-sans'>{siteConfig('AUTHOR')}</div>
             <div className='font-light text-gray-600 mb-1 duration-200 flex justify-center dark:text-gray-400 font-sans'>{siteConfig('BIO')}</div>
-            <section className='flex justify-center pt-4'>
-                <SocialButton/>
-            </section>
+            <SocialButton/>
         </div>
     </div>
   </div>

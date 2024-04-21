@@ -149,7 +149,6 @@ function AsideLeft(props) {
 
             <section className='flex flex-col'>
                 <div className='w-12 my-4' />
-                // <SocialButton />
                 <SiteInfo />
             </section>
 
